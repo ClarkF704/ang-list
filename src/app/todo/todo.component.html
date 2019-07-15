@@ -1,0 +1,42 @@
+<!-- Posting Data † below -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <input 
+                (keyup.enter)="createData(todo)"
+                #todo
+                type="text"
+                class="form-control"
+            >
+
+        </div>
+    </div>
+</div>
+
+<!-- Getting Data † below † -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+          <ul class="list-item">
+            <li 
+            class="list-group-item"
+            *ngFor="let todo of todos"
+            >
+            {{todo.title}}
+            </li>
+        </ul>  
+        </div>
+        <!-- <div class="col-lg-6">
+            <h2>This is a GET request</h2>
+            <ol>
+                <li>I am requesting data from "https://jsonplaceholder.typicode.com/todos" using HttpClient from '@angular/common/http'</li>
+                <li></li>
+            </ol>
+            </div> -->
+    </div>
+</div>
+
+    
+        
+
+
